@@ -1,0 +1,23 @@
+{
+  "name": "vue-auto-drag",
+  "version": "1.0.0",
+  "description": "div自由拖拽",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwfun/vue-auto-drag.git"
+  },
+  "keywords": [
+    "vue",
+    "drag"
+  ],
+  "author": "aw_fun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zwfun/vue-auto-drag/issues"
+  },
+  "homepage": "https://github.com/zwfun/vue-auto-drag#readme"
+}
