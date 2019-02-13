@@ -4,7 +4,9 @@
   "description": "div自由拖拽",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config config/webpack.local.config.js --progress --public --open",
+    "build": "webpack --config config/webpack.build.config.js --progress --hide-modules",
+    "buildExample": "webpack --config config/webpack.local.config.js --progress --hide-modules"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,27 @@
   "bugs": {
     "url": "https://github.com/zwfun/vue-auto-drag/issues"
   },
-  "homepage": "https://github.com/zwfun/vue-auto-drag#readme"
+  "homepage": "https://github.com/zwfun/vue-auto-drag#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^15.6.2",
+    "vue-template-compiler": "^2.6.6",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "vue": "^2.6.6",
+    "vue-types": "^1.3.4"
+  }
 }
