@@ -12,7 +12,7 @@ module.exports = merge(
         output: {
             filename: '[name].bundle.js',
             chunkFilename: '[name].bundle.js',
-            path: path.resolve(__dirname, 'examples_dist')
+            path: path.join(__dirname, '..', 'exampleDist')
         },
         mode: 'development',
         devtool: 'inline-source-map',
