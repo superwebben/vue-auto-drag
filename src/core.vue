@@ -2,7 +2,7 @@
  * @Description: 拖拽组件， 拖拽放大缩小div, 拖拽移动
  * @Author: zw8
  * @Date: 2019-01-21 17:35:06
- * @LastEditTime: 2019-01-24 19:36:35
+ * @LastEditTime: 2019-02-14 10:07:14
  * @LastEditors: Please set LastEditors
  -->
 
@@ -185,7 +185,7 @@ export default {
     }
 
     .layer_top:hover {
-        cursor: n-resize;
+        cursor: ns-resize;
         border-top: 2px solid #ccc;
     }
 
@@ -197,7 +197,7 @@ export default {
     }
 
     .layer_right:hover {
-        cursor: e-resize;
+        cursor: ew-resize;
         border-right: 2px solid #ccc;
     }
 
@@ -209,7 +209,7 @@ export default {
     }
 
     .layer_bottom:hover {
-        cursor: s-resize;
+        cursor: ns-resize;
         border-bottom: 2px solid #ccc;
     }
 
@@ -221,7 +221,7 @@ export default {
     }
 
     .layer_left:hover {
-        cursor: w-resize;
+        cursor: ew-resize;
         border-left: 2px solid #ccc;
     }
 

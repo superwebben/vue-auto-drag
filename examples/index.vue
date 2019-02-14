@@ -1,20 +1,28 @@
 <template>
     <div class="ui-auto-drag-wrap">
         <div class="container">
-            <auto-drag  class="left-wrap" dragLeft>
+            <auto-drag  
+                :maxWidth="300"
+                :minWidth="100"
+                class="left-wrap" 
+                dragRight>
                 <div class="left">左</div>
             </auto-drag>
             
             <div class="main">
-                <auto-drag class="top-wrap" dragTop>
+                <auto-drag 
+                    :maxHeight="300"
+                    :minHeight="100"
+                    class="top-wrap" 
+                    dragBottom>
                     <div class="top">上</div>
                 </auto-drag>
                 <div class="center"></div>
-                <auto-drag class="bottom-wrap" dragBottom>
+                <auto-drag class="bottom-wrap" dragTop>
                     <div class="bottom">下</div>
                 </auto-drag>
             </div>
-            <auto-drag  class="right-wrap" dragRight>
+            <auto-drag  class="right-wrap" dragLeft>
                 <div class="right">右</div>
             </auto-drag>
         </div>
