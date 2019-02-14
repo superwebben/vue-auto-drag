@@ -23,32 +23,21 @@ module.exports = {
                 exclude: /(node_modules)/
             },
             {
-                test: /\.(scss|css)$/,
-                oneOf: [
-                    {
-                        resourceQuery: /module/,
-                        use: [
-                            { loader: MiniCssExtractPlugin.loader },
-                            {
-                                loader: 'css-loader',
-                                options: {
-                                    modules: true,
-                                    localIdentName: '[local]_[hash:base64:8]'
-                                }
-                            },
-                            { loader: 'postcss-loader' },
-                            { loader: 'sass-loader' }
-                        ]
-                    },
-                    {
-                        use: [
-                            { loader: MiniCssExtractPlugin.loader },
-                            { loader: 'css-loader' },
-                            { loader: 'postcss-loader' },
-                            { loader: 'sass-loader' }
-                        ]
-                    }
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
                 ]
+            },
+            {
+                test: /\.scss$/,
+                use: [{
+                    loader: "style-loader" // 将 JS 字符串生成为 style 节点
+                }, {
+                    loader: "css-loader" // 将 CSS 转化成 CommonJS 模块
+                }, {
+                    loader: "sass-loader" // 将 Sass 编译成 CSS
+                }]
             }
         ],
     },
