@@ -1,6 +1,6 @@
 {
   "name": "vue-auto-drag",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "div自由拖拽",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,8 @@
   },
   "keywords": [
     "vue",
-    "drag"
+    "drag",
+    "div"
   ],
   "author": "aw_fun",
   "license": "ISC",
